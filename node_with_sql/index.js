@@ -109,6 +109,16 @@ app.patch('/user/:id', (req, res) => {
     });
 });
 
+app.delete('/user/:id', (req, res) => {
+    const { id } = req.params;
+
+    const q = `DELETE FROM users WHERE userId='${id}'`;
+
+    connection.query(q, (err) => {
+        if (err) return res.status(500).send('Delete failed');
+        res.redirect('/users');
+    });
+});
 
 
 

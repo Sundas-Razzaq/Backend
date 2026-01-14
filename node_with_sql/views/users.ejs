@@ -38,6 +38,9 @@
                     <form action="/user/<%= user.userId %>/edit" method="get">
                         <button>edit username</button>
                     </form>
+                    <form action="/user/<%= user.userId %>?_method=DELETE" method="post">
+                        <button type="submit">delete</button>
+                    </form>
 
                 </td>
                 <td>
