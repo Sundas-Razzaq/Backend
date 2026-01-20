@@ -1,0 +1,14 @@
+.chat{
+    background-color: black;
+    color: turquoise;
+}
+.msg{
+    background-color: gray;
+    color: white;
+    border: 2px solid turquoise;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    width: fit-content;
+    max-width: 60%;
+}
